@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{bibentry}
+\usepackage{quoting}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\nobibliography*
+\bibliographystyle{plain}
+
+\newcommand{\annotatedbib}[2]{
+\begin{itemize}
+    \item[\cite{#1}] \bibentry{#1}
+    \begin{quote}
+        #2
+    \end{quote}
+\end{itemize}
+}
+
+\title{EECS 598: Artificial General Intelligence}
+\author{Max Olan Smith}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{What is Intelligence? Definitions}
+\input{sections/lec1_what_is_intelligence}
+
+\section{What is General Intelligence? Definitions and Requirements}
+\input{sections/lec2_what_is_general_intelligence}
+
+\section{Animal Intelligence}
+\input{sections/lec3_animal_intelligence}
+
+\section{Human Brain as a Machine}
+\input{sections/lec4_human_brain}
+
+\section{Foundations of Cognition Science}
+\input{sections/lec5_cognition_science}
+
+\section{Human Cognition Core Systems}
+\input{sections/lec6_cognition_systems}
+
+\section{Embodiment}
+\input{sections/lec7_embodiment}
+
+\section{Representation}
+\input{sections/lec8_representation}
+
+\section{Common Sense Reasoning and Understanding}
+\input{sections/lec9_common_sense}
+
+\section{Analogy}
+\input{sections/lec10_analogy}
+
+\section{Metacognition and Theory of Mind}
+\input{sections/lec11_metacognition}
+
+\section{Emotion}
+\input{sections/lec12_emotion}
+
+\section{Types and Levels of Learning}
+\input{sections/lec13_learning}
+
+\section{Cognitive Architecture and Common Model of Cognition}
+\input{sections/lec14_cognitive_architecture}
+
+\section{ACT-R}
+\input{sections/lec15_actr}
+
+\section{Soar}
+\input{sections/lec16_soar}
+
+\section{DIARC - Task Module Approach}
+\input{sections/lec17_diarc}
+
+\section{Neuro-Inspired Models}
+\input{sections/lec18_neuro_inspired}
+
+\section{SPAUN}
+\input{sections/lec19_spaun}
+
+\section{LEABRA}
+\input{sections/lec20_leabra}
+
+\section{Neuro-Turing Machines}
+\input{sections/lec21_neuro_turing_machine}
+
+\section{Reinforcement Learning \& Intrinsic Reward}
+\input{sections/lec22_rl}
+
+\section{Bayesian Approaches}
+\input{sections/lec23_bayesian}
+
+\section{AI-GAs}
+\input{sections/lec24_ai_ga}
+
+\section{Task Learning}
+\input{sections/lec25_task_learning}
+
+\section{TBA}
+
+
+\section{Future Implications}
+\input{sections/lec27_future_implications}
+
+\newpage
+\nocite{*}
+\bibliography{bibliography}
+
+\end{document}
